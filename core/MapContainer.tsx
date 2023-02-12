@@ -20,13 +20,13 @@ const LogoOuter = styled(Absolute)`
     svg {
       circle {
         fill: #fff;
-        stroke: ${ColorScheme.primary};
+        stroke: #137CBD;
         stroke-width: 10px;
       }
       path {
         fill: #000;
         stroke-width: 10px;
-        stroke: ${ColorScheme.primary};
+        stroke: #137CBD;
       }
     }
   }
@@ -42,15 +42,6 @@ const MapContainer: React.FC<Props> = ({embed, children}) => (
             <div className={'logo'}>
               <Logo embed={embed} fontSize={20} />
             </div>
-            <Away href="https://stand-with-ukraine.pp.ua">
-              <Image
-                alt={'Stand with Ukraine'}
-                title={'Stand with Ukraine'}
-                width={30 * 0.8}
-                height={20 * 0.8}
-                src={'/images/StandWithUkraine.svg'}
-              />
-            </Away>
           </div>
         </LogoOuter>
       </>
